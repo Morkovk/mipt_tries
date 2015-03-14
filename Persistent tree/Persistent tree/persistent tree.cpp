@@ -2,11 +2,13 @@
 #include <string>
 #include <cmath>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-#define MAX_VALUE 1000
+#define MAX_VALUE 20
 
+class node;
 
 class PersistentTree{
 public:
@@ -14,7 +16,8 @@ public:
 	vector<node*> roots;
 
 	PersistentTree(vector<int> arr);
-	void Statistic(int i, int begin, int end);
+	int Statistic(int i, int begin, int end);
+	int statisticForTwoPrefixes(int i, node* begin, node* end);
 	void attachPrefix(vector<int> arr, int k);
 	int RSQ(int prefix, int begin, int end);
 
@@ -42,7 +45,6 @@ public:
 	node* node::ChangeLeaf(int index, node* oldVersion);
 	node(node* example);
 	int RSQ(int begin, int end);
-	node* statistic(int i);
 };
 
 node::node(node* left, node* right, int i){
@@ -83,18 +85,10 @@ node::node(node* example){
 int node::RecalcSum(){
 	if (!leaf)
 		Value = rightChild->Value + leftChild->Value;
+	return Value;
 }
 
-int node::RSQ(int begin, int end){
-	if (begin == first && end == last)
-		return Value;
-	else if (begin > leftChild->last)
-		return rightChild->RSQ(begin, end);
-	else if (end < rightChild->first)
-		return leftChild->RSQ(begin, end);
-	else
-		return leftChild->RSQ(begin, end) + rightChild->RSQ(begin, end);
-}
+
 
 node* node::ChangeLeaf(int index, node* oldVersion){
 	node* newNode;
@@ -118,7 +112,7 @@ node* node::ChangeLeaf(int index, node* oldVersion){
 void PersistentTree::attachPrefix(vector<int> arr, int k){//prefix with k elements(we are eliminating k-th element)
 	int index = arr[k];//have to decrement
 	node* oldVersion = nodes[FirstLeaf + index];
-	node *newNode = new node(roots[roots.size]);//create a copy of a previous version
+	node *newNode = new node(roots[roots.size()]);//create a copy of a previous version
 	newNode->ChangeLeaf(index, oldVersion);
 	roots.push_back(newNode);
 }
@@ -132,25 +126,25 @@ PersistentTree::PersistentTree(vector<int> arr){
 		SizeOfTree += pow(2, l);
 	}
 
-	FirstLeaf = SizeOfTree - (int)pow(2, height);
+	FirstLeaf = SizeOfTree - pow(2, height);
 
-	roots.reserve(MAX_VALUE);
+	roots.reserve(arr.size());
 	nodes.resize(SizeOfTree);
 
 	for (int k = FirstLeaf; k < SizeOfTree; k++){
 		node newLeaf = node(k);
 		nodes[k] = &newLeaf;
 	}
-	for (int k = FirstLeaf; k > 0; k++){
+	for (int k = FirstLeaf - 1; k >= 0; k--){
 		node newNode = node(nodes[2 * k + 1], nodes[2 * k + 2], k);
 		nodes[k] = &newNode;
 	}
 
-	for (vector<int>::iterator i = arr.begin(); i < arr.end(); i++){
-		nodes[FirstLeaf + *i]->Value++;
+	for (int i = 0; i < arr.size(); i++){
+		(nodes[FirstLeaf + arr[i]]->Value)++;
 	}
 
-	nodes[0]->CalcSum;
+	nodes[0]->CalcSum();
 
 	roots.push_back(nodes[0]);
 
@@ -158,21 +152,52 @@ PersistentTree::PersistentTree(vector<int> arr){
 		attachPrefix(arr, l);
 }
 
-void PersistentTree::Statistic(int i, int begin, int end){//задача найти префикс, количество rsq на котором будет k-1
+int PersistentTree::Statistic(int i, int begin, int end){//задача найти префикс, количество rsq на котором будет k-1
 	node* endOfSubsection = roots[roots.size() - end];
 	node* beginOfSubsection = roots[roots.size() - begin];
+	return statisticForTwoPrefixes(i, beginOfSubsection, endOfSubsection);
+}
+
+
+
+int PersistentTree::statisticForTwoPrefixes(int i, node* begin, node* end){
+	if (begin->leaf)
+		return begin->index;
+	if (i < end->leftChild->Value - begin->leftChild->Value)
+		return statisticForTwoPrefixes(i, begin->leftChild, end->leftChild);
+	else
+		return statisticForTwoPrefixes(i - (end->leftChild->Value - begin->leftChild->Value), begin->rightChild, end->rightChild);
 }
 
 
 int PersistentTree::RSQ(int prefix, int begin, int end){
-	roots[roots.size() - prefix]->RSQ(begin, end);
+	return roots[roots.size() - prefix]->RSQ(begin, end);
 }
 
-node* node::statistic(int i){
-	if (leaf)
-		return this;
-	if (i < leftChild->Value)
-		return leftChild->statistic(i);
-	else if (i >= leftChild->Value)
-		return rightChild->statistic(i - leftChild->Value);
+int node::RSQ(int begin, int end){
+	if (begin == first && end == last)
+		return Value;
+	else if (begin > leftChild->last)
+		return rightChild->RSQ(begin, end);
+	else if (end < rightChild->first)
+		return leftChild->RSQ(begin, end);
+	else
+		return leftChild->RSQ(begin, end) + rightChild->RSQ(begin, end);
+}
+
+int main(){
+	vector<int> arr(20);
+
+	for (vector<int>::iterator i = arr.begin(); i < arr.end(); i++)
+		*i = rand() % 20 + 1;
+
+	for (vector<int>::iterator i = arr.begin(); i < arr.end(); i++)
+		cout << *i << ' ';
+	cout << endl;
+
+	PersistentTree *tr = new PersistentTree(arr);
+	cout << tr->Statistic(3, 0, 19);
+
+	std::sort(arr.begin(), arr.end());
+	cout << arr[3];
 }
