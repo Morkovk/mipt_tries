@@ -46,6 +46,7 @@ public:
 		data = a;
 		RSQValue = data;
 		suffix = 1;
+		prefix = 1;
 		leftest = rightest = this;
 		HaveToReverse = 0;
 	}
