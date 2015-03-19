@@ -3,43 +3,63 @@
 #include <iostream>
 #include <algorithm>
 #include <assert.h>
+#include <vector>
 
-//using namespace std;
 
-using std::cout;
-using std::ofstream;
-using std::ifstream;
-using std::fstream;
-using std::endl;
-using std::ios;
-using std::string;
+using namespace std;
 
-int StupidRSQ(string str, int begin, int end){
+int StupidRSQ(vector <int> arr, int begin, int end){
 	int result = 0;
 	for (int i = begin; i <= end; i++){
-		result += (int)str[i] - (int)'0';
+		result += arr[i];
 	}
 	return result;
 }
 
-bool cmp(const char &a, const char &b){
-	return (bool)((int)a - (int)b);
+
+void StupidNextPermutation(vector<int> &arr, int begin, int end){
+
+	int suffix = 1;
+	int i = end;
+
+	while (arr[i] <= arr[i - 1]){
+		suffix++;
+		i--;
+		if (i < 0)
+		break;
+	}
+	if (suffix >= end - begin + 1){
+		int k = begin;
+		for (int i = 0; i < (end - k + 1) / 2; i++){
+			swap(arr[k + i], arr[end - i]);
+		}
+	}
+	else{
+		i--;
+		int ToChange = i;
+
+		int j = ToChange + 1;
+		while (arr[j] > arr[ToChange]){
+			j++;
+			if (j > end)
+				break;
+		}
+		j--;
+
+		swap(arr[ToChange], arr[j]);
+
+		for (int l = 0; l < (end - ToChange) / 2; l++){
+			swap(arr[ToChange + 1 + l], arr[end - l]);
+		}
+	}
+	//std::next_permutation((arr.begin() + begin), (arr.begin() + end + 1));
 }
 
 
-void StupidNextPermutation(string &str, int begin, int end){
-	std::next_permutation(str[begin], str[end], cmp);
-}
-
-void StupidSet(string str, int index, int newValue){
-	str[index] = (char)((int)'0' + newValue);
-}
-
-bool TreeVsArray(item tr, string str){
-	assert(tr->c == str.length());
-	for (int i; i < str.length(); i++){
-		if (tr->Find(i)->data != (int)str[i] - (int)'0'){
-			cout << "ERROR: your programm doesn't work";
+bool TreeVsArray(item tr, vector <int> arr){
+	assert(tr->c == arr.size());
+	for (int i = 0; i < arr.size(); i++){
+		if (tr->Find(i)->data != arr[i]){
 			return false;
 		}
 	}

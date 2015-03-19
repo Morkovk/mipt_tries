@@ -3,10 +3,6 @@
 #include <ctime>
 #include <fstream>
 
-
-
-#define _CRT_SECURE_NO_WARNINGS
-
 using namespace std;
 
 
@@ -24,17 +20,19 @@ string randomStrGen(int length) {
 	return result;
 }
 
+const int MAXN = 50;
+
 void CreateTest(){
 
-	srand(time(NULL));
+	srand(1);
 	ofstream test("Test.txt");
 
 	int index;
 	char newValue;
 	int begin, end, formerLength;
 
-	int NumberOfQueries = rand() % 100;
-	int strlen = rand() % 100000;
+	int NumberOfQueries = MAXN;
+	int strlen = MAXN;
 	string str = randomStrGen(strlen);
 
 	test << NumberOfQueries << endl << str << endl;
@@ -52,21 +50,21 @@ void CreateTest(){
 			break;
 		case 1:
 			if (!(j % 2)){
-				formerLength = rand() % 40 + 1;
+				formerLength = rand()%(MAXN / 2) + 1;
 				str = randomStrGen(formerLength);
 				str.resize(formerLength * 2);
 				for (int i = 0; i < formerLength; i++)
 					str[formerLength + i] = str[formerLength - i - 1];
 			}
 			else if (!(j % 3)){
-				formerLength = rand() % 40 + 1;
+				formerLength = (MAXN / 2) + 1;
 				str = randomStrGen(formerLength);
 				str.resize(formerLength * 2 - 1) ;
 				for (int i = 0; i < formerLength - 1; i++)
 					str[formerLength + i] = str[formerLength - i - 2];
 			}
 			else{
-				formerLength = rand() % 80 + 1;
+				formerLength = (MAXN / 2) + 1;
 				str = randomStrGen(formerLength);
 			}
 			test << str << endl;

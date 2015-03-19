@@ -2,49 +2,43 @@
 #include <string>
 #include <fstream>
 #include <ctime>
+#include <vector>
 
 #define _CRT_SECURE_NO_WARNINGS
 
-//using namespace std;
-
-using std::cout;
-using std::ofstream;
-using std::ifstream;
-using std::fstream;
-using std::endl;
-using std::ios;
-using std::string;
+using namespace std;
 
 
-char randomLetterGen(){
-	static string charset = "1234567890";
-	return charset[rand() % charset.length()];
+
+vector<int> randomArrGen(int lenght) {
+	vector<int>arr(lenght);
+	for (int i = 0; i < lenght; i++)
+		arr[i] = rand()%1000 + 1;
+	return arr;
 }
 
-
-string randomStrGen(int length) {
-	srand(time(NULL));
-	string result;
-	result.resize(length);
-	for (int i = 0; i < length; i++)
-		result[i] = randomLetterGen();
-	return result;
-}
-
-void CreateTest(){
+void CreateTest(int numberoftest){
+	srand(numberoftest);
 	
 	ofstream test;
 	test.open("Test.txt");
 
 	int index;
-	char newValue;
+	int newValue;
 	int begin, end;
 
-	int NumberOfQueries = rand()%100;
-	int strlen = rand()% 1000;
-	string str = randomStrGen(strlen);
+	int NumberOfQueries = 100000;
 
-	test << NumberOfQueries << endl << str << endl;
+	int lenght = 100000 + 1;
+	vector<int>arr = randomArrGen(lenght);
+
+
+	test << NumberOfQueries << endl << lenght << endl;
+	
+	for (int i = 0; i < lenght; i++)
+		test << arr[i] << ' ';
+	
+	test << endl;
 
 	int operation;
 	
@@ -52,19 +46,19 @@ void CreateTest(){
 		operation = rand() % 3;
 		switch (operation){
 		case 0:
-			index = rand() % strlen;
-			newValue = randomLetterGen();
-			test << index << endl << newValue << endl;
+			index = rand() % lenght;
+			newValue = rand()% 1000 + 1;
+			test << operation << endl << index << endl << newValue << endl;
 			break;
 		case 1:
-			begin = rand() % strlen;
-			end = rand() % strlen - begin + 1;
-			test << begin << endl << end << endl;
+			begin = rand() % lenght;
+			end = begin + rand() % (lenght - begin);
+			test << operation << endl << begin << endl << end << endl;
 			break;
 		case 2:
-			begin = rand() % strlen;
-			end = rand() % strlen - begin + 1;
-			test << begin << endl << end << endl;
+			begin = rand() % lenght;
+			end = begin + rand() % (lenght - begin);
+			test << operation << endl << begin << endl << end << endl;
 			break;
 		}
 	}
