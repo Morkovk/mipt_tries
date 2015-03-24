@@ -12,74 +12,65 @@
 
 using namespace std;
 
-bool ArrayVsTree(Tree *tr, string str){
+/*bool ArrayVsTree(Tree *tr, string str){
 	for (int i = 0; i < str.length(); i++){
 		int index = tr->FirstLeaf + i;
 		node n = tr->arr[index];
 		if ((int)str[i] != n.letter)
 			return false;
 	}
-}
+}*/
 
+int i;
 
 
 int main(){
 
-	CreateTest();
+	
+	
 
 	int NumberOfQueries;
 	string str;
 	int operation;
 	char newValue;
-	int index, begin, end;
+	int index1, index2, _begin, _end;
 	bool MyResult, StupidResult;
 	clock_t startTime;
-
 	ifstream test;
-	test.open("Test.txt");
-	test >> NumberOfQueries;
-
 	vector<bool>MyResults;
 	vector<bool>StupidResults;
 
-	//cout << NumberOfQueries << endl;
-	test >> str;
+	CreateTest();
 
-	Tree *tr = new Tree(str);
+	test.open("Test.txt");
+	test >> NumberOfQueries;
+
+
+	//cout << NumberOfQueries << l;
+	test >> str;
+	
+	Tree tr(str);
 
 	startTime = clock();
 
 
-	for (int i = 0; i < NumberOfQueries; i++){
+	for (i = 0; i < NumberOfQueries; i++){
 		test >> operation;
 
 		switch (operation){
 		case 0:{
-				   test >> index;
+				   test >> index1;
+				   test >> index2;
 				   test >> newValue;
-				   tr->SetAt(newValue, index);
-				   //str[index] = newValue;
-				   /*if (!ArrayVsTree(tr, str)){
-					   cout << "ERROR:your programm doesn't work";
-					   exit(1);
-				   }*/
+				   tr.SetAt(newValue, index1);
+				   tr.SetAt(newValue, index2);
 				   break;
 		}
 		case 1:{
-				   test >> str;
-				   //tr = new Tree(str);
-				   Tree tr(str);
-				   cout << i;
-				   test >> begin;
-				   test >> end;
-				   MyResult = tr.IsPal(begin, end);
+				   test >> _begin;
+				   test >> _end;
+				   MyResult = tr.IsPal(_begin, _end);
 				   MyResults.push_back(MyResult);
-				   //delete tr;
-				   //StupidResult = StupidIsPal(str, begin, end);
-				  /*if (MyResult != StupidResult){
-					   cout << "ERROR:your programm doesn't work";
-					   exit(1);
-				   }*/
 				   break;
 		}
 		}
@@ -97,29 +88,21 @@ int main(){
 		test >> operation;
 
 		switch (operation){
-		case 0:{
-				   test >> index;
-				   test >> newValue;
-				   str[index] = newValue;
-				   //str[index] = newValue;
-				   /*if (!ArrayVsTree(tr, str)){
-				   cout << "ERROR:your programm doesn't work";
-				   exit(1);
-				   }*/
-				   break;
-		}
-		case 1:{
-				   test >> str;
-				   test >> begin;
-				   test >> end;
-				   StupidResult = StupidIsPal(str, begin, end);
-				   StupidResults.push_back(StupidResult);
-				   /*if (MyResult != StupidResult){
-				   cout << "ERROR:your programm doesn't work";
-				   exit(1);
-				   }*/
-				   break;
-		}
+			case 0:{
+					   test >> index1;
+					   test >> index2;
+					   test >> newValue;
+					   str[index1] = newValue;
+					   str[index2] = newValue;
+					   break;
+			}
+			case 1:{
+					   test >> _begin;
+					   test >> _end;
+					   StupidResult = StupidIsPal(str, _begin, _end);
+					   StupidResults.push_back(StupidResult);
+					   break;
+			}
 		}
 	}
 	cout << std::setprecision(15) << "Stupid time: " << double(clock() - startTime) / (double)CLOCKS_PER_SEC << " seconds." << endl;
@@ -132,5 +115,4 @@ int main(){
 	test.close();
 	getc(stdin);
 	system("Pause");
-
 }

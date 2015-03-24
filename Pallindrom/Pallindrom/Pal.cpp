@@ -220,7 +220,7 @@ Tree::Tree(string str){
 
 	while ((1 << p) < SizeOfTree) p++;
 	str.resize(1 << p);
-	powers.resize((1 << p));
+	powers.resize(1 << p);
 	p++;
 	
 	SizeOfTree = (1 << p);

@@ -12,8 +12,8 @@ public:
 
 	int t; //coeffcient
 	int modul; //modul
-	int FirstLeaf;
-	//int LastLeaf;
+	unsigned int FirstLeaf;
+	vector<int> powers;
 
 	Tree(string str);
 	bool IsPal(int begin, int end);

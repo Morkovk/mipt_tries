@@ -9,6 +9,7 @@
 #include <algorithm>
 
 
+
 using std::cout;
 using std::cin;
 using std::vector;
@@ -70,11 +71,14 @@ int main(){
 
 
 	for (int i = 0; i < NumberOfQueries; i++){
-		std::copy(MyArr.begin(), MyArr.end(), CurCopy.begin());
+		//std::copy(MyArr.begin(), MyArr.end(), CurCopy.begin());
 		test >> begin >> end >> k;
-		std::sort(CurCopy.begin() + begin, CurCopy.end() + end);
+		CurCopy.resize(end - begin);
+		std::copy(MyArr.begin() + begin, MyArr.begin() + end, CurCopy.begin());
+		//std::sort(CurCopy.begin() + begin, CurCopy.begin() + end);
 		//cout << res << endl;
-		StupidResults[i] = CurCopy[begin + k];
+		nth_element(CurCopy.begin(), CurCopy.begin() + k, CurCopy.end());
+		StupidResults[i] = CurCopy[k];
 	}
 
 	cout << std::setprecision(15) << "Stupid time: " << double(clock() - startTime) / (double)CLOCKS_PER_SEC << " seconds." << endl;

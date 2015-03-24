@@ -20,20 +20,20 @@ string randomStrGen(int length) {
 	return result;
 }
 
-const int MAXN = 50;
+const int MAXN = 100000;
 
 void CreateTest(){
 
 	srand(1);
 	ofstream test("Test.txt");
 
-	int index;
+	int index1, index2;
 	char newValue;
 	int begin, end, formerLength;
 
 	int NumberOfQueries = MAXN;
-	int strlen = MAXN;
-	string str = randomStrGen(strlen);
+	int strlength = MAXN;
+	string str = randomStrGen(strlength);
 
 	test << NumberOfQueries << endl << str << endl;
 
@@ -44,37 +44,18 @@ void CreateTest(){
 		test << operation << endl;
 		switch (operation){
 		case 0:
-			index = rand() % str.length();
+			index1 = rand() % (strlength / 2);
+			index2 = strlength - index1 - 1;
 			newValue = randomLetterGen();
-			test << index << endl << newValue << endl;
+			test << index1 << endl << index2 << endl <<  newValue << endl;
 			break;
 		case 1:
 			if (!(j % 2)){
-				formerLength = rand()%(MAXN / 2) + 1;
-				str = randomStrGen(formerLength);
-				str.resize(formerLength * 2);
-				for (int i = 0; i < formerLength; i++)
-					str[formerLength + i] = str[formerLength - i - 1];
-			}
-			else if (!(j % 3)){
-				formerLength = (MAXN / 2) + 1;
-				str = randomStrGen(formerLength);
-				str.resize(formerLength * 2 - 1) ;
-				for (int i = 0; i < formerLength - 1; i++)
-					str[formerLength + i] = str[formerLength - i - 2];
+				begin = rand() % (strlength / 2);
+				end = strlength - begin - 1;
 			}
 			else{
-				formerLength = (MAXN / 2) + 1;
-				str = randomStrGen(formerLength);
-			}
-			test << str << endl;
-			strlen = str.length();
-			if (!(j % 2)){
-				begin = rand() % (strlen / 2);
-				end = strlen - begin - 1;
-			}
-			else{
-				end = rand() % strlen;
+				end = rand() % strlength;
 				begin = 0;
 				if (end)
 					begin = rand() % end;
