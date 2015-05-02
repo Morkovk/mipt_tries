@@ -24,22 +24,9 @@ public:
 	int prefix;//rising
 	double RSQValue;
 	bool HaveToReverse;
-	node(){
-		priority = rand();
-		left = right = NULL;
-		c = 1;
-		HaveToReverse = 0;
-	}
-	node(int a){
-		priority = rand();
-		left = right = NULL;
-		c = 1;
-		data = a;
-		RSQValue = data;
-		suffix = 1;
-		leftest = rightest = this;
-		HaveToReverse = 0;
-	}
+	
+	node(int a);
+
 	void merge(item &tree, item first, item second);
 	void split(item tree, int i, item & left, item & right);
 	void insert(item & tree, int i, item it);
@@ -64,6 +51,17 @@ public:
 	void print();
 
 };
+
+node::node(int a){
+	priority = rand();
+	left = right = NULL;
+	c = 1;
+	data = a;
+	RSQValue = data;
+	suffix = prefix = 1;
+	leftest = rightest = this;
+	HaveToReverse = 0;
+}
 
 
 

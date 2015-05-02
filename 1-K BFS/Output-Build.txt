@@ -1,0 +1,519 @@
+﻿1>------ Build started: Project: 1-K BFS, Configuration: Debug Win32 ------
+1>Build started 26.04.2015 0:10:03.
+1>Building with tools version "12.0".
+1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (entry point):
+1>Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+1>Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+1>Using "Message" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "Message"
+1>  Configuration=Debug
+1>Done executing task "Message".
+1>Task "Message"
+1>  Platform=Win32
+1>Done executing task "Message".
+1>Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\' != '' and !HasTrailingSlash('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\')).
+1>Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+1>Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Debug\' != '' and !HasTrailingSlash('Debug\')).
+1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "1-K BFS.vcxproj".
+1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
+1>Done building target "_PrepareForBuild" in project "1-K BFS.vcxproj".
+1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+1>Done building target "_PrepareForReferenceResolution" in project "1-K BFS.vcxproj".
+1>Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('1-K BFS.cpp'!='' and 'false'=='true' and '' != 'false').
+1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Done building target "BeforeResolveReferences" in project "1-K BFS.vcxproj".
+1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "AssignProjectConfiguration"
+1>Done executing task "AssignProjectConfiguration".
+1>Done building target "AssignProjectConfiguration" in project "1-K BFS.vcxproj".
+1>Target "AssignProjectConfiguration" skipped. Previously built successfully.
+1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveProjectReferences" depends on it):
+1>Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+1>Done building target "_SplitProjectReferencesByFileExistence" in project "1-K BFS.vcxproj".
+1>Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '12.0' != '10.0' and '' != '').
+1>Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' == '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '12.0' == '10.0' and '' != '').
+1>Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
+1>Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
+1>Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
+1>Done building target "ResolveProjectReferences" in project "1-K BFS.vcxproj".
+1>Target "FindInvalidProjectReferences" skipped, due to false condition; ('$(FindInvalidProjectReferences)' == 'true') was evaluated as ('' == 'true').
+1>Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+1>Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+1>Target "GetFrameworkPaths" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.NetFramework.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+1>Done building target "GetFrameworkPaths" in project "1-K BFS.vcxproj".
+1>Target "GetWinFXPath" skipped, due to false condition; (('@(Page)' != '' or '@(ApplicationDefinition)' != '' or '@(Resource)' != '') and ('$(GetWinFXNativePath)' != '' or '$(GetWinFXWoWPath)' != '' )) was evaluated as (('' != '' or '' != '' or '' != '') and ('' != '' or '' != '' )).
+1>Target "GetReferenceAssemblyPaths" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+1>Task "GetReferenceAssemblyPaths" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and ('$(_TargetFrameworkDirectories)' == '' or '$(_FullFrameworkReferenceAssemblyPaths)' == '')) was evaluated as ('' != '' and ('C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '' or 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0' == '')).
+1>Done building target "GetReferenceAssemblyPaths" in project "1-K BFS.vcxproj".
+1>Target "SetBuildDefaultEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareForBuild" depends on it):
+1>Using "SetEnv" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Build.CppTasks.Common.dll".
+1>Task "SetEnv"
+1>  PATH=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x86;;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\Tools\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\tools;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files (x86)\MSBuild\12.0\bin\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Windows\SysWow64;;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\TortoiseSVN\bin;D:\opencv\build\\x64\vc12\bin;
+1>Done executing task "SetEnv".
+1>Task "SetEnv"
+1>  LIB=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x86;;
+1>Done executing task "SetEnv".
+1>Task "SetEnv"
+1>  LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib;
+1>Done executing task "SetEnv".
+1>Task "SetEnv"
+1>  INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;;
+1>Done executing task "SetEnv".
+1>Done building target "SetBuildDefaultEnvironmentVariables" in project "1-K BFS.vcxproj".
+1>Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
+1>Target "GetResolvedWinMD" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareForBuild" depends on it):
+1>Done building target "GetResolvedWinMD" in project "1-K BFS.vcxproj".
+1>Target "PlatformPrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareForBuild" depends on it):
+1>Task "VCMessage" skipped, due to false condition; ('$(_Error64bitToolsNotInstalled)' == 'true') was evaluated as ('' == 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(ConfigurationPlatformExists)' != 'true') was evaluated as ('true' != 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(ToolsetTargetsFound)' != 'true') was evaluated as ('true' != 'true').
+1>Done building target "PlatformPrepareForBuild" in project "1-K BFS.vcxproj".
+1>Target "GetFrameworkPaths" skipped. Previously built successfully.
+1>Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
+1>Target "SetCABuildNativeEnvironmentVariables" in file "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\CodeAnalysis\Microsoft.CodeAnalysis.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareForBuild" depends on it):
+1>Initializing task factory "CodeTaskFactory" from assembly "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Build.Tasks.v12.0.dll".
+1>Using "SetEnvironmentVariable" task from the task factory "Code Task Factory".
+1>Task "SetEnvironmentVariable"
+1>Done executing task "SetEnvironmentVariable".
+1>Done building target "SetCABuildNativeEnvironmentVariables" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+1>Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+1>Using "MakeDir" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
+1>Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and ('$(TargetFrameworkVersion)'=='v3.5' or '$(TargetFrameworkVersion)'=='v3.0' or '$(TargetFrameworkVersion)'=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\'=='' and '' != 'true' and ('v4.0'=='v3.5' or 'v4.0'=='v3.0' or 'v4.0'=='v2.0' )).
+1>Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\'=='' and '' != 'true' and 'v120'=='v90').
+1>Task "VCMessage" skipped, due to false condition; ('$(VCInstallDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\'=='' and '' != 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(WindowsSDKDir)'=='' and '$(UseEnv)' != 'true') was evaluated as ('C:\Program Files (x86)\Windows Kits\8.1\'=='' and '' != 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(IntDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+1>Task "VCMessage" skipped, due to false condition; ('$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
+1>Task "VCMessage" skipped, due to false condition; ('%(CompatibilityIssues.Identity)' != '' and '$(DesignTimeBuild)'!='true') was evaluated as ('' != '' and ''!='true').
+1>Task "VCMessage" skipped, due to false condition; ('$(_MBCS_Using)' == 'true' and '$(_MBCS_Installed)' != 'true' and '$(DesignTimeBuild)' != 'true') was evaluated as ('' == 'true' and '' != 'true' and '' != 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirSharingDetected)' != 'true' and '$(IntDirSharingDetected)' == 'true') was evaluated as ('' != 'true' and '' == 'true').
+1>Task "VCMessage" skipped, due to false condition; ('$(IgnoreWarnIntDirInTempDetected)' != 'true' and ('$(_IntDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_IntDirFullpath.StartsWith($(Temp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Tmp), true, null))' == 'true' or '$(_OutDirFullpath.StartsWith($(Temp), true, null))' == 'true')) was evaluated as ('' != 'true' and ('False' == 'true' or 'False' == 'true' or 'False' == 'true' or 'False' == 'true')).
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "PrepareForBuild" in project "1-K BFS.vcxproj".
+1>Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
+1>Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('1-K BFS.cpp'!='' and 'false'=='true' and '' != 'false').
+1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveSDKReferences" depends on it):
+1>Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
+1>Done building target "GetInstalledSDKLocations" in project "1-K BFS.vcxproj".
+1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+1>Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
+1>Done building target "ResolveSDKReferences" in project "1-K BFS.vcxproj".
+1>Target "ResolveSDKReferences" skipped. Previously built successfully.
+1>Target "ExpandSDKReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveAssemblyReferences" depends on it):
+1>Task "GetSDKReferenceFiles" skipped, due to false condition; ('@(ResolvedSDKReference)'!='') was evaluated as (''!='').
+1>Done building target "ExpandSDKReferences" in project "1-K BFS.vcxproj".
+1>Target "ResolveAssemblyReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Task "ResolveAssemblyReference" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
+1>Done building target "ResolveAssemblyReferences" in project "1-K BFS.vcxproj".
+1>Target "GenerateBindingRedirects" skipped, due to false condition; ('$(AutoGenerateBindingRedirects)' == 'true' and '$(GenerateBindingRedirectsOutputType)' == 'true') was evaluated as ('' == 'true' and 'true' == 'true').
+1>Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+1>Target "AfterResolveReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ResolveReferences" depends on it):
+1>Done building target "AfterResolveReferences" in project "1-K BFS.vcxproj".
+1>Target "ImplicitlyExpandDesignTimeFacades" skipped, due to false condition; ('$(ImplicitlyExpandDesignTimeFacades)' == 'true') was evaluated as ('' == 'true').
+1>Target "ResolveReferences" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Done building target "ResolveReferences" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "ReadLinesFromFile"
+1>Done executing task "ReadLinesFromFile".
+1>Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "WriteLinesToFile"
+1>Done executing task "WriteLinesToFile".
+1>Using "Touch" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "Touch"
+1>  Creating "Debug\1-K BFS.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+1>Done executing task "Touch".
+1>Done building target "InitializeBuildStatus" in project "1-K BFS.vcxproj".
+1>Target "AssignProjectConfiguration" skipped. Previously built successfully.
+1>Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+1>Target "BuildGenerateSourcesTraverse" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildGenerateSources" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != '' and '' == 'true').
+1>Done building target "BuildGenerateSourcesTraverse" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "ResolveReferences" skipped. Previously built successfully.
+1>Target "BeforeBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Done building target "BeforeBuildGenerateSources" in project "1-K BFS.vcxproj".
+1>Target "PreBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+1>Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
+1>Done building target "PreBuildEvent" in project "1-K BFS.vcxproj".
+1>Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+1>Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+1>Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
+1>Target "_Xsd" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Done building target "_Xsd" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Midl" depends on it):
+1>Task "Makedir"
+1>Done executing task "Makedir".
+1>Done building target "MakeDirsForMidl" in project "1-K BFS.vcxproj".
+1>Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
+1>Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
+1>Target "FxCompile" skipped, due to false condition; ('@(FxCompile)' != '') was evaluated as ('' != '').
+1>Target "ComputeMIDLGeneratedCompileInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Midl" depends on it):
+1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "1-K BFS.vcxproj".
+1>Target "AfterMidl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Midl" depends on it):
+1>Done building target "AfterMidl" in project "1-K BFS.vcxproj".
+1>Target "_Midl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Done building target "_Midl" in project "1-K BFS.vcxproj".
+1>Target "AfterBuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Done building target "AfterBuildGenerateSources" in project "1-K BFS.vcxproj".
+1>Target "AfterBuildGenerateSourcesEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildGenerateSourcesAction" depends on it):
+1>Done building target "AfterBuildGenerateSourcesEvent" in project "1-K BFS.vcxproj".
+1>Target "_BuildGenerateSourcesAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildGenerateSources" depends on it):
+1>Done building target "_BuildGenerateSourcesAction" in project "1-K BFS.vcxproj".
+1>Target "BuildGenerateSources" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Done building target "BuildGenerateSources" in project "1-K BFS.vcxproj".
+1>Target "AssignProjectConfiguration" skipped. Previously built successfully.
+1>Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+1>Target "BuildCompileTraverse" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildCompile" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+1>Done building target "BuildCompileTraverse" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "ResolveReferences" skipped. Previously built successfully.
+1>Target "BeforeClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Done building target "BeforeClCompile" in project "1-K BFS.vcxproj".
+1>Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+1>Target "ComputeCLInputPDBName" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Done building target "ComputeCLInputPDBName" in project "1-K BFS.vcxproj".
+1>Target "ResolveReferences" skipped. Previously built successfully.
+1>Target "ComputeReferenceCLInput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Task "WriteLinesToFile" skipped, due to false condition; (('@(_ReferenceCopyLocalPaths)'!='') and '$(DesignTimeBuild)' != 'true') was evaluated as ((''!='') and '' != 'true').
+1>Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
+1>Done building target "ComputeReferenceCLInput" in project "1-K BFS.vcxproj".
+1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Task "VCMessage" skipped, due to false condition; ('%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('1-K BFS.cpp' != '1-K BFS.cpp' and 'Debug\' == 'Debug\').
+1>Done building target "WarnCompileDuplicatedFilename" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForCl" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "MakeDirsForCl" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
+1>Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
+1>Target "_SelectedFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "SelectClCompile" depends on it):
+1>Done building target "_SelectedFiles" in project "1-K BFS.vcxproj".
+1>Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+1>Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+1>Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+1>Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+1>Target "_SelectedFiles" skipped. Previously built successfully.
+1>Target "SelectCustomBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "SelectClCompile" depends on it):
+1>Done building target "SelectCustomBuild" in project "1-K BFS.vcxproj".
+1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ClCompile" depends on it):
+1>Done building target "SelectClCompile" in project "1-K BFS.vcxproj".
+1>Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
+1>Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('1-K BFS.cpp' != '' and 'false' == 'True').
+1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc120.pdb' != '' and !Exists(Debug\vc120.pdb)).
+1>Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
+1>Using "CL" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Build.CppTasks.Common.dll".
+1>Task "CL"
+1>  Read Tracking Logs:
+1>  	Debug\1-K BFS.tlog\cl.read.1.tlog
+1>  Outputs for C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\1-K BFS.CPP:
+1>  	C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ
+1>  1-K BFS.cpp will be compiled as C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.cpp was modified at 26.04.2015 0:10:02.
+1>  Environment Variables passed to tool:
+1>    VS_UNICODE_OUTPUT=1480
+1>  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "1-K BFS.cpp"
+1>  Tracking command:
+1>  C:\Program Files (x86)\MSBuild\12.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\12.0\bin\FileTracker.dll" /i "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\Debug\1-K BFS.tlog" /r "C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\1-K BFS.CPP" /b MSBuildConsole_CancelEvent3845093545294a00b98de968983a07bd  /c "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "1-K BFS.cpp"
+1>  1-K BFS.cpp
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(51): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(71): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(119): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(120): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(156): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(198): warning C4018: '<=' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(199): warning C4018: '<=' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(216): warning C4018: '<' : signed/unsigned mismatch
+1>c:\users\user\documents\visual studio 2013\projects\1-k bfs\1-k bfs\1-k bfs.cpp(221): warning C4018: '<' : signed/unsigned mismatch
+1>Done executing task "CL".
+1>Done building target "ClCompile" in project "1-K BFS.vcxproj".
+1>Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('1-K BFS.cpp' != '' and 'false' == 'True').
+1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ClCompile" depends on it):
+1>Done building target "AfterClCompile" in project "1-K BFS.vcxproj".
+1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildCompileAction" depends on it):
+1>Done building target "_ClCompile" in project "1-K BFS.vcxproj".
+1>Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
+1>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ResourceCompile" depends on it):
+1>Done building target "BeforeResourceCompile" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ResourceCompile" depends on it):
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "MakeDirsForResourceCompile" in project "1-K BFS.vcxproj".
+1>Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
+1>Target "AfterResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_ResourceCompile" depends on it):
+1>Done building target "AfterResourceCompile" in project "1-K BFS.vcxproj".
+1>Target "_ResourceCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildCompileAction" depends on it):
+1>Done building target "_ResourceCompile" in project "1-K BFS.vcxproj".
+1>Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
+1>Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
+1>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildCompileAction" depends on it):
+1>Done building target "AfterBuildCompileEvent" in project "1-K BFS.vcxproj".
+1>Target "_BuildCompileAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildCompile" depends on it):
+1>Done building target "_BuildCompileAction" in project "1-K BFS.vcxproj".
+1>Target "BuildCompile" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Done building target "BuildCompile" in project "1-K BFS.vcxproj".
+1>Target "AssignProjectConfiguration" skipped. Previously built successfully.
+1>Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+1>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildLink" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
+1>Done building target "BuildLinkTraverse" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "ResolveReferences" skipped. Previously built successfully.
+1>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+1>Done building target "ComputeLegacyManifestEmbedding" in project "1-K BFS.vcxproj".
+1>Target "BeforeLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "BeforeLink" in project "1-K BFS.vcxproj".
+1>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
+1>Done building target "ComputeRCOutputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "ComputeRCGeneratedLinkInputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeCustomBuildOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Task "CreateItem" skipped, due to false condition; ('%(CustomBuildDirsToMake.OutputFileToTool)'!='') was evaluated as (''!='').
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "ComputeCustomBuildOutput" in project "1-K BFS.vcxproj".
+1>Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
+1>Target "ComputeCLInputPDBName" skipped. Previously built successfully.
+1>Target "ComputeReferenceCLInput" skipped. Previously built successfully.
+1>Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
+1>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
+1>Done building target "ComputeCLOutputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "ComputeCLGeneratedLinkInputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "ComputeLinkInputsFromProject" in project "1-K BFS.vcxproj".
+1>Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
+1>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "ComputeManifestInputsTargets" in project "1-K BFS.vcxproj".
+1>Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('LINK' == 'LINK' and '' != '').
+1>Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
+1>Target "AssignTargetPaths" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareResourceNames" depends on it):
+1>Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+1>Done building target "AssignTargetPaths" in project "1-K BFS.vcxproj".
+1>Target "AssignTargetPaths" skipped. Previously built successfully.
+1>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareResourceNames" depends on it):
+1>Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+1>Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+1>Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+1>Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+1>Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "AssignCulture"
+1>Done executing task "AssignCulture".
+1>Done building target "SplitResourcesByCulture" in project "1-K BFS.vcxproj".
+1>Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+1>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareResourceNames" depends on it):
+1>Done building target "CreateCustomManifestResourceNames" in project "1-K BFS.vcxproj".
+1>Target "PrepareResourceNames" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "PrepareResourceNames" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "MakeDirsForLink" in project "1-K BFS.vcxproj".
+1>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe' == '').
+1>Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe' != '' and 'C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe' != 'C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe').
+1>Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe' != '' and '.exe' != '' and '.exe' != '.exe').
+1>Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe' != '' and '1-K BFS' != '' and '1-K BFS' != '1-K BFS').
+1>Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('' == '' or '' == 'NotSet')).
+1>Done building target "DoLinkOutputFilesMatch" in project "1-K BFS.vcxproj".
+1>Target "PreLinkEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+1>Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
+1>Done building target "PreLinkEvent" in project "1-K BFS.vcxproj".
+1>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Link" depends on it):
+1>Done building target "ComputeLinkSwitches" in project "1-K BFS.vcxproj".
+1>Target "Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Using "Link" task from assembly "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Build.CppTasks.Common.dll".
+1>Task "Link"
+1>  Write Tracking Logs:
+1>  	Debug\1-K BFS.tlog\link.write.1.tlog
+1>  Read Tracking Logs:
+1>  	Debug\1-K BFS.tlog\link.read.1.tlog
+1>  Outputs for C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ:
+1>  	C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\DEBUG\1-K BFS.ILK
+1>  	C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\DEBUG\1-K BFS.EXE
+1>  	C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\DEBUG\1-K BFS.PDB
+1>  Inputs for C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ:
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\KERNEL32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\USER32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\GDI32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\WINSPOOL.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\COMDLG32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ADVAPI32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\SHELL32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLE32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\OLEAUT32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\UUID.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBC32.LIB
+1>  	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBCCP32.LIB
+1>  	C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ
+1>  	C:\WINDOWS\SYSTEM32\TZRES.DLL
+1>  	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+1>  	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\LIB\MSVCPRTD.LIB
+1>  	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\LIB\MSVCRTD.LIB
+1>  	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\VC\LIB\OLDNAMES.LIB
+1>  Source compilation required: input C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ is newer than output C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\DEBUG\1-K BFS.EXE.
+1>  Environment Variables passed to tool:
+1>    VS_UNICODE_OUTPUT=2044
+1>  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.lib" /MACHINE:X86 "Debug\1-K BFS.obj"
+1>  Tracking command:
+1>  C:\Program Files (x86)\MSBuild\12.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\12.0\bin\FileTracker.dll" /i "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\Debug\1-K BFS.tlog" /r "C:\USERS\USER\DOCUMENTS\VISUAL STUDIO 2013\PROJECTS\1-K BFS\1-K BFS\DEBUG\1-K BFS.OBJ" /b MSBuildConsole_CancelEvent329862fcd53c43b391f5bcb974859d8a  /c "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.lib" /MACHINE:X86 "Debug\1-K BFS.obj"
+1>Done executing task "Link".
+1>Task "Message"
+1>  1-K BFS.vcxproj -> C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\Debug\1-K BFS.exe
+1>Done executing task "Message".
+1>Done building target "Link" in project "1-K BFS.vcxproj".
+1>Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
+1>Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
+1>Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
+1>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
+1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "1-K BFS.vcxproj".
+1>Target "AfterLink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_Link" depends on it):
+1>Done building target "AfterLink" in project "1-K BFS.vcxproj".
+1>Target "_Link" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_Link" in project "1-K BFS.vcxproj".
+1>Target "_ALink" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_ALink" in project "1-K BFS.vcxproj".
+1>Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
+1>Target "_Manifest" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
+1>Done building target "_Manifest" in project "1-K BFS.vcxproj".
+1>Target "RegisterOutput" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
+1>Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
+1>Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
+1>Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
+1>Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
+1>Done building target "RegisterOutput" in project "1-K BFS.vcxproj".
+1>Target "PrepareForBuild" skipped. Previously built successfully.
+1>Target "ResolveReferences" skipped. Previously built successfully.
+1>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_XdcMake" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
+1>Done building target "ResolvedXDCMake" in project "1-K BFS.vcxproj".
+1>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_XdcMake" depends on it):
+1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_XdcMake" depends on it):
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "MakeDirsForXdcMake" in project "1-K BFS.vcxproj".
+1>Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
+1>Target "_XdcMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_XdcMake" in project "1-K BFS.vcxproj".
+1>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BscMake" depends on it):
+1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "1-K BFS.vcxproj".
+1>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BscMake" depends on it):
+1>Task "MakeDir"
+1>Done executing task "MakeDir".
+1>Done building target "MakeDirsForBscMake" in project "1-K BFS.vcxproj".
+1>Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
+1>Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+1>Target "_BscMake" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_BscMake" in project "1-K BFS.vcxproj".
+1>Target "RunMergeNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+1>Target "RunNativeCodeAnalysis" skipped, due to false condition; ('$(Language)'=='C++' and '$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as ('C++'=='C++' and ''=='true').
+1>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
+1>Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+1>Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+1>Done building target "_GenerateSatelliteAssemblyInputs" in project "1-K BFS.vcxproj".
+1>Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+1>Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+1>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "CreateSatelliteAssemblies" in project "1-K BFS.vcxproj".
+1>Target "_Appverifier" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_Appverifier" in project "1-K BFS.vcxproj".
+1>Target "_Deploy" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "_Deploy" in project "1-K BFS.vcxproj".
+1>Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
+1>Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
+1>Target "AssignTargetPaths" skipped. Previously built successfully.
+1>Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+1>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "1-K BFS.vcxproj".
+1>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
+1>Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
+1>Task "AssignTargetPath"
+1>Done executing task "AssignTargetPath".
+1>Done building target "GetCopyToOutputDirectoryItems" in project "1-K BFS.vcxproj".
+1>Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+1>Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+1>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+1>Done building target "_CopySourceItemsToOutputDirectory" in project "1-K BFS.vcxproj".
+1>Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+1>Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+1>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
+1>Done building target "_CheckForCompileOutputs" in project "1-K BFS.vcxproj".
+1>Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+1>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "PrepareForRun" depends on it):
+1>Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
+1>Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
+1>Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
+1>Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+1>Task "Copy" skipped, due to false condition; ('$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true') was evaluated as ('false'=='true' and '' != 'true' and 'true'=='true').
+1>Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+1>Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
+1>Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
+1>Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
+1>Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
+1>Done building target "CopyFilesToOutputDirectory" in project "1-K BFS.vcxproj".
+1>Target "PrepareForRun" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Done building target "PrepareForRun" in project "1-K BFS.vcxproj".
+1>Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
+1>Target "PostBuildEvent" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "_BuildLinkAction" depends on it):
+1>Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
+1>Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
+1>Done building target "PostBuildEvent" in project "1-K BFS.vcxproj".
+1>Target "_BuildLinkAction" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "BuildLink" depends on it):
+1>Done building target "_BuildLinkAction" in project "1-K BFS.vcxproj".
+1>Target "BuildLink" in file "C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Done building target "BuildLink" in project "1-K BFS.vcxproj".
+1>Target "AfterBuild" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Done building target "AfterBuild" in project "1-K BFS.vcxproj".
+1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (target "Build" depends on it):
+1>Using "Delete" task from assembly "Microsoft.Build.Tasks.v12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+1>Task "Delete"
+1>  Deleting file "Debug\1-K BFS.tlog\unsuccessfulbuild".
+1>Done executing task "Delete".
+1>Task "Touch"
+1>  Touching "Debug\1-K BFS.tlog\1-K BFS.lastbuildstate".
+1>Done executing task "Touch".
+1>Done building target "FinalizeBuildStatus" in project "1-K BFS.vcxproj".
+1>Target "Build" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.BuildSteps.Targets" from project "C:\Users\USER\Documents\Visual Studio 2013\Projects\1-K BFS\1-K BFS\1-K BFS.vcxproj" (entry point):
+1>Done building target "Build" in project "1-K BFS.vcxproj".
+1>
+1>Build succeeded.
+1>
+1>Time Elapsed 00:00:00.74
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
